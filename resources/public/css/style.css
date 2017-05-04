@@ -1,0 +1,28 @@
+/* some style */
+
+body {
+  margin:0;
+  background-color: rgb(101, 60, 16);
+}
+
+@keyframes ani {
+	0% {
+		stroke-dasharray: 755 1006;
+		stroke-dashoffset: 0;
+		animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	}
+	49.999% {
+		stroke-dasharray: 0 1006;
+		stroke-dashoffset: 0;
+	}
+	50.001% {
+		stroke-dasharray: 0 1006;
+		stroke-dashoffset: -1006;
+		animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	100% {
+		stroke-dasharray: 755 1006;
+		stroke-dashoffset: -251;
+	}
+}
+@keyframes rot { to { transform: rotate(1turn); } }
